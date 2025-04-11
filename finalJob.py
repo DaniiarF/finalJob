@@ -65,7 +65,7 @@ def get_date_time(message):
 
 def send_image(message):
   print('Функция работает')
-  image_path = r'C:\Users\1\Desktop\Python Обучение\01.04. Финальная работа\Как подготовиться к тренировке.jpg' # Замените на путь к вашему изображению
+  image_path = '/root/finalJob/training_guide.jpg' # Замените на путь к вашему изображению
   with open(image_path, 'rb') as image:
       bot.send_photo(message.chat.id, image, caption="Ознакомьтесь, пожалуйста, с памяткой о подготовке к тренировке.")
 
